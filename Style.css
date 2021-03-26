@@ -1,0 +1,79 @@
+html{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "I"
+    ""
+    ;
+}
+
+
+
+
+
+.intro-page{
+    justify-content: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 7vh;
+    height:100vh;
+
+}
+.intro-page h2{
+    font-size: 5vh;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    background-image: url(images/rylan-hill-3o6NXErKXwo-unsplash.jpg);
+
+    
+    
+    display: 100vh;
+    color: white;
+}
+main p{
+text-align: center;
+margin: 0 20%;
+line-height: 300%;
+font-size: 2vh;
+}
+img{
+    width: 30vh;
+    height: auto;
+    border-radius: 3em;
+   
+}
+main{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+main h1{
+    padding: 9%;
+    text-align: center;
+    font-size: 6vh;
+}
+main div{
+    
+    margin: 5vh;
+    text-decoration: underline;
+    float: left;
+    width: 33.33%;
+    padding: 1vh;
+    justify-items: center;
+    
+
+}
+
+
+main img:hover
+{
+    transform: scale(1.1);
+    border:3px solid rgb(79, 171, 202);
+   
+
+   
+}

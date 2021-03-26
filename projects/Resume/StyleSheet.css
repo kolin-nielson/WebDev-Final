@@ -1,0 +1,73 @@
+.center{
+    text-align: center;
+   
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.profile_pic{
+    text-align: left;
+    display: block;
+   border-radius: 3em;
+    float: left;
+   padding-right: 1em;
+   padding-bottom: 1em;
+   
+ 
+    
+}
+header{
+    border-left: 3em;
+    text-align: center;
+    background-color: cornflowerblue;
+    
+    color: white;
+}
+
+.contact
+{
+    float: initial;
+}
+
+.start::before
+{
+    content:" ";
+    position: absolute;
+    border-bottom: 2px solid cornflowerblue;
+    width: 100%;
+    height: 1.3em;
+    font-weight: bolder;
+}
+#profile{
+    font-weight: bolder;
+    text-decoration: cornflowerblue underline;
+}
+.subsection{
+    font-weight: bold;
+    
+}
+hr{
+    border-top: .2em solid black;
+}
+li{
+    list-style-image: url(circle-cropped.png) ;
+}
+#skills{
+    background-color: rgb(243, 136, 136);
+}
+#job{
+    text-decoration: underline;
+}
+dt{
+    text-decoration: underline;
+    font-weight: bold;
+}
+footer{
+    border-left: 3em;
+    text-align: right;
+    background-color: cornflowerblue;
+    
+    color: white;
+}
+
