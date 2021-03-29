@@ -1,73 +1,231 @@
-.center{
-    text-align: center;
-   
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: grid;
+  font-size: 1em;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.1fr 0.25fr 0.25fr 1fr 0.5fr 0.25fr 0.1fr;
+  grid-template-areas:
+    "I T"
+    "I P"
+    "AS E"
+    "S ED"
+    "S PR"
+    "S ."
+    "F F";
 }
 
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+aside {
+  grid-area: AS;
+  grid-row: span 6;
+  background-color: cornflowerblue;
 }
-.profile_pic{
-    text-align: left;
-    display: block;
-   border-radius: 3em;
-    float: left;
-   padding-right: 1em;
-   padding-bottom: 1em;
-   
- 
-    
-}
-header{
-    border-left: 3em;
-    text-align: center;
-    background-color: cornflowerblue;
-    
-    color: white;
+img {
+  background-color: cornflowerblue;
 }
 
-.contact
-{
-    float: initial;
+li {
+  list-style-type: circle;
+}
+aside li {
+  list-style-type: none;
 }
 
-.start::before
-{
-    content:" ";
-    position: absolute;
-    border-bottom: 2px solid cornflowerblue;
-    width: 100%;
-    height: 1.3em;
-    font-weight: bolder;
-}
-#profile{
-    font-weight: bolder;
-    text-decoration: cornflowerblue underline;
-}
-.subsection{
-    font-weight: bold;
-    
-}
-hr{
-    border-top: .2em solid black;
-}
-li{
-    list-style-image: url(circle-cropped.png) ;
-}
-#skills{
-    background-color: rgb(243, 136, 136);
-}
-#job{
-    text-decoration: underline;
-}
-dt{
-    text-decoration: underline;
-    font-weight: bold;
-}
-footer{
-    border-left: 3em;
-    text-align: right;
-    background-color: cornflowerblue;
-    
-    color: white;
+header {
+  border-top: 0em;
+  border-bottom: 2px solid black;
+  text-align: center;
+  background-color: cornflowerblue;
+
+  color: white;
+  font-size: 120%;
 }
 
+dt {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* classes */
+
+.subsection {
+  font-weight: bold;
+}
+
+.start {
+  border-bottom: 2px solid cornflowerblue;
+}
+
+.contact {
+  opacity: 0.75;
+  max-width: 6em;
+}
+.contact:hover {
+  opacity: 1;
+}
+
+/* ids */
+
+#title {
+  max-height: 10em;
+}
+
+#Pro1 {
+  grid-area: P1;
+}
+#Pro2 {
+  grid-area: P2;
+}
+#Pro3 {
+  grid-area: P3;
+}
+
+#C {
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+}
+#C > div {
+  background-color: red;
+  width: 50%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+#CS {
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+}
+#CS > div {
+  background-color: red;
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
+}
+#HTML {
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+}
+#HTML > div {
+  background-color: red;
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+}
+#java {
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+}
+#java > div {
+  background-color: red;
+  width: 15%;
+  height: 20px;
+  border-radius: 10px;
+}
+#figure {
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+}
+#figure > div {
+  background-color: red;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+#skillsTitle {
+  text-align: center;
+}
+#profile {
+  margin-left: 2em;
+
+  grid-area: P;
+}
+#Employment {
+  grid-area: E;
+  margin-left: 2em;
+}
+#skills p {
+  font-size: 1.2em;
+  font: bold;
+}
+#skills {
+  padding-left: 2px;
+  padding-right: 5px;
+  grid-area: S;
+  grid-row: span auto;
+  border-right: 2px solid black;
+  background-color: cornflowerblue;
+  list-style-type: none;
+}
+#job {
+  text-decoration: underline;
+  grid-area: E;
+  margin-left: 2em;
+}
+#Education {
+  grid-area: ED;
+  margin-left: 2em;
+}
+
+#side {
+  grid-area: AS;
+  border-right: 2px solid black;
+  list-style-type: none;
+  /* display: grid; */
+
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr; */
+  /* grid-template-areas:  */
+  /* "EM PH" */
+  /* "IN GI"; */
+  /* justify-items: center; */
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+#Email {
+  grid-area: EM;
+}
+#Phone {
+  grid-area: PH;
+}
+#Insta {
+  grid-area: IN;
+}
+#Git {
+  grid-area: GI;
+  border-radius: 50em;
+}
+
+#projects {
+  grid-area: PR;
+  margin-left: 2em;
+}
+#profile_pic {
+  max-width: 22em;
+  background-color: cornflowerblue;
+  grid-area: I;
+
+  border-right: 2px solid black;
+  margin: 0 auto;
+
+  background-color: cornflowerblue;
+}
+
+/* footer */
+footer {
+  border-top: solid black 2px;
+  text-align: right;
+  background-color: cornflowerblue;
+  grid-area: F;
+  color: white;
+}
