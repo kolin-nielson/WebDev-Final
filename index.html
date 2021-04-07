@@ -1,91 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="fireworks.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kolin Nielson | Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
+  <body>
+      <header> <div class="container">
+      <div class="navbar">
+        <img src="/images/Bright.jpg" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li><a href="" id="home">Home</a></li>
+            <li><a href="" id="about">About</a></li>
+            <li><a href="" id="infor">Info</a></li>
+            <li><a href="" id="projects">Projects</a></li>
+          </ul>
+        </nav>
+        <img src="/images/menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>Kolin Nielson<br />Portfolio</h2>
+          <h3>Snow College</h3>
+          <p>Software Engineer</p>
+        </div>
+        <div class="col-2">
+          <img src="images/portriat.png" class="portriat" />
+          <div class="color-box"><div class="wave"></div></div>
+        </div>
+      </div>
 
-<body>
-    <div class="intro-page">
-        <h1>Kolin Nielson</h1>
-        <h2>Web Portfolio</h2>
-        <div class="firework" id="firework1">
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-        </div>
-        <div class="firework" id="firework2">
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-        </div>
-        <div class="firework" id="firework3">
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-            <div class="explosion"></div>
-        </div>
-
+      <div class="social-links">
+        <img src="/images/mail.webp" />
+        <img src="/images/ig.png" />
+        <img src="/images/git.png" />
+      </div>
     </div>
+    </header>
+
 
     <main>
-        <h1>A little Bit About Me</h1>
-        <p>I'm a first year college student who is going into the software engineering field as a web developer. I'm currently 19 years old
-            and ready to be done with school. Learning subjects in school that I will never use or remember in a year really frustrates me.
-              My life right now is all about learning to code. Learning as much as I can and trying new projects whenever I get a chance. Seeing and being a part
-              of the tech industry is really my dream I've always loved tech and been completely in love with the process of automation. Anyways that a little about myself. In the rest
-              of the site I will be showcasing my projects and providing a forum and  contact section. Please contact me and give me feedback I'd love to hear from you!
-        </p>
+        <div class="about-color"></div>
+        <div class="about-color-offset"></div>
+        <div class="about">
+            <h2>About</h2>
+                <p>I'm a first year software engineering student at snow college. So far I've learned the basics of HTML, CSS, and JS. 
+                    I aspire to one day be a full stack developer that has all the knowledge of how the web operates.
+                    I really enjoy coding and making a website come to life is fasinating to me. 
+                    Because of this I've made the desicion to emphasise in Web Development as a Software Engineer.
+                    So far my journey has been a big learning curve but very fun and eventful nevertheless.
+                    Can't wait what's in store for me next in my journey.
 
-<h1>Projects</h1>
-        <div class="projects">  
-        <div class="Resume">
-            <h2>Resume</h2>
-            <a href="Projects/Resume/resume.html"><img src="/images/resume.png" alt=""></a></div>
-        <div class="Clock">
-            <h2>Clock</h2>
-            <a href="projects/Clock/clock.html"><img src="/images/clock.png" alt=""></a></div>
-
-        <div class="platformer">
-            <h2>Platformer</h2>
-            <a href="projects/Platformer/platformer.html"><img src="/images/cover.jpg" alt=""></a>
+                </p>
+            
+            
         </div>
-    </div>
-      
+        <div class="info-color"></div>
+        <div class="info-color-offset"></div>
+        <div class="info">
+            <h2>Info</h2>
+            <p>
+                The purpose of this portfolio isn't for applying to jobs or to show how great of a dev I am.
+                This portfolio is simply a final project for my Web Dev 1 class. 
+                I hope to showcase what I've learned in the duration of this semester and show my progress in my career.
+            </p>
+        </div>
 
+        
     </main>
+   
 
-</body>
-
+    
+  </body>
 </html>
