@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="matter.js"></script>
+    <script>
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+      }
+      //using matter.js
+      let engine = Matter.Engine.create();
+      let render = Matter.Render.create({
+        element: document.body,
+        engine: engine,
+        options: {
+          width: 1600,
+          height: 800,
+          wireframes: false,
+        },
+      });
+
+      let ground = Matter.Bodies.rectangle(400, 500, 810, 30, {
+        isStatic: true,
+        angle: Math.PI * 0.06
+       
+
+      });
+      let ground1 = Matter.Bodies.rectangle(1000, 300, 810, 30, {
+        isStatic: true,
+       angle: Math.PI * -0.06
+
+      });
+      let ground2 = Matter.Bodies.rectangle(1000, 700, 810, 30, {
+        isStatic: true,
+       angle: Math.PI * -0.06
+
+      });
+
+
+      
+      let stack = Matter.Composites.stack(
+        1000,
+        2,
+        8,
+        8,
+        0,
+        0,
+        function (x, y) {
+          return Matter.Bodies.circle(
+            x,
+            y,
+            getRandomInt(3, 20),{friction: 0.001, restitution: 0.5, density: 0.01}
+            
+          );
+        }
+      );
+
+      let mouse = Matter.Mouse.create(render.canvas);
+      let mouseConstraint = Matter.MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+          render: { visible: false },
+        },
+      });
+      render.mouse = mouse;
+
+      Matter.World.add(engine.world, [stack, ground,ground1, mouseConstraint,ground2]);
+      Matter.Engine.run(engine);
+      Matter.Render.run(render);
+    </script>
+  </body>
+</html>

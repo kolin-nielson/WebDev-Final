@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kolin Nielson | Portfolio</title>
     <link rel="stylesheet" href="Style.css" />
+    
     <script src="script.js" defer></script>
   </head>
   <body>
       <header> <div class="container">
       <div class="navbar">
-        <img src="/images/Bright.jpg" class="logo" />
+        <img src="/images/Bright.png" class="logo" />
         <nav>
           <ul id="menuList">
-            <li><a href="" id="home">Home</a></li>
-            <li><a href="" id="about">About</a></li>
-            <li><a href="" id="infor">Info</a></li>
-            <li><a href="" id="projects">Projects</a></li>
+            <li><a href="#home" id="nav-home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </nav>
         <img src="/images/menu.png" class="menu-icon" onclick="togglemenu()" />
@@ -35,10 +36,10 @@
       </div>
 
       <div class="social-links">
-        <img src="/images/mail.webp" />
-        <img src="/images/ig.png" />
-        <img src="/images/git.png" />
-      </div>
+       <a href="mailto:klnnielson@gmail.com"><img src="/images/mail.webp" /></a> 
+       <a href="https://www.instagram.com/kolin_nielson/"> <img src="/images/ig.png" /></a>
+       <a href="https://github.com/kolin-nielson"> <img src="/images/git.png" />
+      </div></a>
     </div>
     </header>
 
@@ -46,14 +47,14 @@
     <main>
         <div class="about-color"></div>
         <div class="about-color-offset"></div>
-        <div class="about">
+        <div class="about" id="about">
             <h2>About</h2>
-                <p>I'm a first year software engineering student at snow college. So far I've learned the basics of HTML, CSS, and JS. 
-                    I aspire to one day be a full stack developer that has all the knowledge of how the web operates.
-                    I really enjoy coding and making a website come to life is fasinating to me. 
+                <p>I'm a first year student at Snow College and am studying software engineering with an emphasise on web development. So far I've learned the basics of HTML, CSS, and JS. 
+                    I aspire to one day be a full stack developer that has all the knowledge of how the web operates and how to build apps and sites on top of it.
+                    I really enjoy coding and making a website come to life and make fullfill a purpose is fasinating to me. 
                     Because of this I've made the desicion to emphasise in Web Development as a Software Engineer.
-                    So far my journey has been a big learning curve but very fun and eventful nevertheless.
-                    Can't wait what's in store for me next in my journey.
+                    So far my journey has been a big learning curve but very fun and eventful nevertheless all of my skills in programming has come from this first year in college and I'd say it's came pretty far.
+                    Can't wait what's in store for me next in my journey!
 
                 </p>
             
@@ -61,17 +62,29 @@
         </div>
         <div class="info-color"></div>
         <div class="info-color-offset"></div>
-        <div class="info">
+        <div class="info" id="info">
             <h2>Info</h2>
             <p>
-                The purpose of this portfolio isn't for applying to jobs or to show how great of a dev I am.
-                This portfolio is simply a final project for my Web Dev 1 class. 
-                I hope to showcase what I've learned in the duration of this semester and show my progress in my career.
+               The purpose of this webpage is to fullfill my final project requirements for Web Development 1 and to showcase
+               some of what I've learned throught the semester. Some of the projects below are from in class activities and some 
+               I did on my own. All of which show off all the progress I've made and how far along I am in my journey of becoming
+               a Web Developer.
             </p>
         </div>
-
         
-    </main>
+      </main>
+      <div class="projects-container">
+      <h2 id="projects-h2">Projects</h2>
+      <div class="projects" id="projects">
+          <a href="/projects/Resume/Resume.html" class="resume"> Resume<img src="/images/resume.png" class="resume"></a>
+          <a href="/projects/Clock/clock.html" class="clock">Clock<img src="/images/clock.PNG" class="clock"></a>
+          <a href="/projects/Platformer/platformer.html" class="platformer">Platformer<img src="/images/platformer.PNG" class="platformer"></a>
+          <a href="/projects/Physics Example/physics.html" class="physics">Matter.js<img src="/images/matterjs.PNG" class="physics"></a>
+          <a href="/projects/weather app/index.html" class="weather">Weather App<img src="/images/weatherApp.PNG" class="weather"></a>
+
+</div>
+        </div>
+        
    
 
     
