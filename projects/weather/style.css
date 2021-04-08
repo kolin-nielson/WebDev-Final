@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background-color: beige;
+}
+
+h1 {
+  font-size: 4em;
+  color: coral;
+  text-decoration: underline;
+}
+#time{
+    font-size: 3em;
+    text-decoration: underline;
+    color: black;
+
+}
+div {
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+}
+img {
+  margin: 1em;
+}
+#container {
+  border: 3px solid black;
+  border-radius: 2em;
+  background-color: aliceblue;
+}
+button {
+  font-size: 1.5em;
+  margin: 3em 5em;
+  border-radius: 2em;
+  background-color: coral;
+}
