@@ -18,7 +18,7 @@ var keys = {
     up: false,
 };
 // The friction and gravity to show realistic movements    
-var gravity = 0.6;
+var gravity = 0.3;
 var friction = 0.4;
 // The number of platforms
 var num = Radomplat(5,50);
@@ -115,10 +115,10 @@ function loop() {
     player.jump = true;
     // If the left key is pressed increase the relevant horizontal velocity
     if (keys.left) {
-        player.x_v = -7;
+        player.x_v = -3.4;
     }
     if (keys.right) {
-        player.x_v = 7;
+        player.x_v = 3.4;
     }
     // Updating the y and x coordinates of the player
     player.y += player.y_v;

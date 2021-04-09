@@ -124,12 +124,13 @@ div h2:after {
     .projects{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "R"
         "C"
         "P"
         "PH"
+        "Z"
         ;
         justify-items: center;
         align-items: center;
@@ -278,6 +279,10 @@ main {
 }
 .about {
   margin: 80px 0px;
+  background-color: beige;
+  padding: 3em;
+  border-radius: 5em;
+  transform: translateY(100px);
 }
 .about h2 {
   font-size: 35px;
@@ -289,17 +294,22 @@ main {
 }
 .info {
   margin: 80px 0px;
+  background-color:lavender;
+  padding: 3em;
+  border-radius: 5em;
+ transform: translateY(100px);
 }
 .info h2 {
   font-size: 35px;
   margin: 30px 0;
-  margin-top: 300px;
+  
 }
 .info p {
   font-size: 24px;
 }
 
 .about-color {
+  display: none;
   position: absolute;
   top: 1000px;
   height: 40%;
@@ -309,6 +319,7 @@ main {
   border-radius: 0 7em;
 }
 .about-color-offset {
+  display: none;
   position: absolute;
   top: 1200px;
   left: -30px;
@@ -320,6 +331,7 @@ main {
   z-index: -1;
 }
 .info-color {
+  display: none;
   position: absolute;
   top: 1600px;
   height: 40%;
@@ -329,6 +341,7 @@ main {
   border-radius: 7em 0;
 }
 .info-color-offset {
+  display: none;
   position: absolute;
   top: 1700px;
   left: -10px;
@@ -348,7 +361,7 @@ main {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "R C P"
-    "PH W .";
+    "PH W Z";
     justify-items: center;
     align-items: center;
     align-items: center;
@@ -469,6 +482,26 @@ background-size: cover;
     border: 5px solid mediumspringgreen;
     transition: 0.3s;
 }
+.catz{
+  grid-area: Z;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 30px;
+  color: mediumspringgreen;
+  font-weight: 900;
+  width: 80%;
+  border-radius: 20%;
+  margin: 40px;
+}
+.catz img{
+  border: 2px solid black;
+
+}
+.catz img:hover{
+  transform: scale(1.2);
+  border: 5px solid mediumspringgreen;
+  transition: 0.3s;
+}
 @media only screen and (max-width: 700px) {
     body{
         background-image: url(/images/pexels-joão-jesus-925743.jpg);
@@ -511,6 +544,7 @@ color: black;
         "P"
         "PH"
         "W"
+        "Z"
         ;
         justify-items: center;
         align-items: center;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX & VUE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body id="body">
+    <h1>Cat Images from API</h1>
+    <input id="input" placeholder="# of cat images you want" v-model="catz" @keyup.enter="Render"></input>
+
+    <div id="inject"></div>
+
+    <script>
+
+        async function API() {
+
+
+            let url = "https://thatcopy.pw/catapi/rest/";
+            let urlFetch = await fetch(url);
+
+            let obj = await urlFetch.json();
+            let picUrl = obj.url;
+
+            var image = document.createElement('img');
+            image.src = picUrl;
+            image.width = "200";
+
+
+            document.getElementById('inject').appendChild(image);
+        }
+
+
+
+
+        const Update = {
+            data() {
+                return {
+                    catz: null,
+                }
+            },
+            methods: {
+                Render() {
+                    for (i = 0; i < this.catz; i++)
+                        API();
+
+
+                }
+            }
+
+        };
+
+        Vue.createApp(Update).mount('#body');
+
+    </script>
+</body>
+
+</html>
