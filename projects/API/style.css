@@ -13,8 +13,6 @@ h1 {
   -webkit-text-stroke: 1px black;
 }
 input {
-  text-align: center;
-  margin-left: 30%;
   border: 2px solid plum;
   margin-bottom: 100px;
 
@@ -23,4 +21,7 @@ input {
 body {
   background-image: -moz-linear-gradient(rgb(255, 58, 58), pink, white);
   background-repeat: no-repeat;
+}
+header{
+  text-align: center;
 }
