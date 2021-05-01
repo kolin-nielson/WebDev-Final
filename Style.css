@@ -121,6 +121,9 @@ div h2:after {
 }
 
 @media only screen and (max-width: 700px) {
+  p{
+    font-size: 12px;
+  }
     .projects{
         display: grid;
         grid-template-columns: 1fr;
@@ -197,14 +200,23 @@ div h2:after {
     width: 30%;
     transform: translateY(105px) translateX(160px);
   }
+  p{
+    font-size: 12px;
+  }
 }
 @media only screen and (min-width: 1100px) {
+  p{
+    font-size: 12px;
+  }
   .col-2 .portriat {
     width: 30%;
     transform: translateY(86px) translateX(170px);
   }
 }
 @media only screen and (min-height: 800px) {
+  p{
+    font-size: 12px;
+  }
   .col-2 .portriat {
     width: 30%;
     transform: translateY(-48px) translateX(160px);
@@ -217,18 +229,27 @@ div h2:after {
   }
 }
 @media only screen and (min-width: 600px) {
+  p{
+    font-size: 12px;
+  }
   .col-2 .portriat {
     width: 30%;
     transform: translateY(105px) translateX(160px);
   }
 }
 @media only screen and (min-height: 800px) {
+  p{
+    font-size: 12px;
+  }
   .col-2 .portriat {
     width: 30%;
     transform: translateY(-30px) translateX(120px);
   }
 }
 @media only screen and (min-width: 600px) {
+  p{
+    font-size: 12px;
+  }
   .col-2 .portriat {
     width: 30%;
     transform: translateY(105px) translateX(160px);
@@ -463,6 +484,7 @@ background-size: cover;
   transition: 0.3s;
 }
 @media only screen and (max-width: 700px) {
+  p{font-size: 12px;}
   .wave{
     display: none;
   }
